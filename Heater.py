@@ -192,7 +192,7 @@ class TempSchedule(Heater):
                     while time.time()-startTime < staytime*60:
                         f.write(self.outputTemp())
                         time.sleep(self.outputStep)
-            self.cycleNumber -= 1
+                self.cycleNumber -= 1
 
 
 if __name__ == '__main__':
